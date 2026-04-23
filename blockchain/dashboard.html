@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MedEase Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* page layout */
+body{
+    display:flex;
+    height:100vh;
+    background:#e9edf2;
+}
+
+/* sidebar */
+.sidebar{
+    width:240px;
+    background:#072b58;
+    color:white;
+    padding:25px 15px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* round icon */
+.icon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#072b58;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+/* dashboard title */
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+/* menu buttons */
+.menu button{
+    width:190px;
+    padding:13px;
+    margin:8px 0;
+    border:none;
+    border-radius:10px;
+    background:#e6eef5;
+    color:#0c5a8f;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.menu button:hover{
+    background:#ec5b1d;
+}
+
+/* main area */
+.main{
+    flex:1;
+    padding:25px 30px;
+}
+
+/* blue top container */
+.header-card{
+    background:#072b58;
+    border-radius:15px;
+    padding:25px;
+    color:white;
+}
+
+/* heading */
+.header-card h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* inner light box for image */
+.image-box{
+    background:#2c7cad;
+    padding:20px;
+    border-radius:15px;
+}
+
+/* image style */
+.banner{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+/* content section */
+.content{
+    margin-top:30px;
+    text-align:center;
+}
+
+.content h2{
+    margin-bottom:12px;
+}
+
+.content p{
+    color:#555;
+    font-size:16px;
+    max-width:700px;
+    margin:auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <div class="icon">❤</div>
+    <div class="logo">Dashboard</div>
+
+    <div class="menu">
+        <a href="file:///C:/Users/Dhanya/Desktop/my%20projects/blockchain/inventory.html"><button>Inventory</button></a>
+<a href="file:///C:/Users/Dhanya/Desktop/my%20projects/blockchain/track.html"><button>Tracking</button></a>
+<a href="file:///C:/Users/Dhanya/Desktop/my%20projects/blockchain/chabot.html"><button>Chat-Bot</button></a>
+<a href="file:///C:/Users/Dhanya/Desktop/my%20projects/blockchain/feedback.html"><button>Feedback</button></a>
+
+    </div>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <div class="header-card">
+        <h1>Welcome to MedEase</h1>
+
+        <div class="image-box">
+            <img src="1.jpeg" class="banner" alt="medical image">
+        </div>
+    </div>
+
+    
+</div>
+
+<script>
+function showMsg(section){
+    alert(section + " module will open here.");
+}
+</script>
+
+</body>
+</html>
